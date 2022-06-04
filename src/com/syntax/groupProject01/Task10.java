@@ -3,19 +3,22 @@ package com.syntax.groupProject01;
 public class Task10 {
 
 	public static void main(String[] args) {
-//Write a Java Program to print the first 10 numbers of Fibonacci series.
-
-		int[] num = new int[10];
-		num[0] = 0;
-		num[1] = 1;
-		System.out.print(num[0] + " " + num[1] + " ");
-
-		for (int i = 2; i < 10; i++) {
-			num[i] = num[i - 1] + num[i - 2];
-			System.out.print(num[i] + " ");
+//Write a java program to find the second largest number in the array?
+		update github
+		int[] array= {1,2,3,4,5,6};
+		int max=0;
+		int scdMax=0;
+		
+		for(int i=0; i<array.length; i++) {
+			if(array[i]>max) {
+				scdMax=max;
+				max=array[i];
+			}else if(array[i]>scdMax) {
+				scdMax=array[i];
+			}
 		}
-
-
+		System.out.println("The second largest number in the array is "+scdMax);
+	
   }
 
 }
